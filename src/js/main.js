@@ -12,4 +12,19 @@ $(document).ready(function(){
 			$this.closest($formLabel).addClass('active');
 		}
 	});
+
+	// Custom select dropdown
+	$('.subs-wrapper').each(function(){
+
+		let $input = $(this).find('input'),
+			$dropDown = $(this).find('ul');
+	
+		$(this).on('click', function() {
+			$dropDown.stop().slideToggle();
+		});
+	
+		$dropDown.on('click', 'li', function() {
+			$input.val($(this).text());
+		});
+	});
 });
