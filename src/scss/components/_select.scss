@@ -1,0 +1,55 @@
+.subs-wrapper {
+    display: inline-block;
+    margin-left: 30px;
+    width: 74px;
+    border: none;
+    border-bottom: 1px solid $governor-bay;
+    background-color: transparent;
+    
+    input {
+        width: 100%;
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+        color: $governor-bay;
+        cursor: pointer;
+        
+        &::placeholder {
+            color: $governor-bay;
+        }
+    }
+
+    &__list {
+        display: none;
+        position: absolute;
+        top: 42px;
+        right: 0;
+        margin: 0;
+        width: 140px;
+        height: auto;
+        background-color: $selago;
+        border-radius: 6px;
+        z-index: 999;
+
+        li {
+            padding: 10px 32px;
+            font-size: 16px;
+            cursor: pointer;
+            list-style: none;
+            color: $governor-bay;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 34px;
+        top: 16px;
+        pointer-events: none;
+        border: solid $governor-bay;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+    }
+}
