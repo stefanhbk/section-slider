@@ -32,7 +32,6 @@ $(document).ready(function(){
 	});
 
 	$('body').on('click', function(e) {
-		e.preventDefault();
 
 		if(!$(e.target).is('.subs-wrapper') && !$('.subs-wrapper__list').is(':hidden')) {
 			$('.subs-wrapper').find('ul').slideToggle();
