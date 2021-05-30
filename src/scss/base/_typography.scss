@@ -12,3 +12,14 @@
 span {
     color: $governor-bay;
 }
+
+.heading,
+.paragraph,
+h3,
+span,
+label,
+input,
+li,
+a {
+    font-family: $primary;
+}

@@ -10,7 +10,7 @@ body {
     padding: 50px 20px;
     font-family: $primary;
     box-sizing: border-box;
-    background-color: $mercury;
+    background-color: $mercury !important;
 }
 
 .main-container {

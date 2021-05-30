@@ -1,15 +1,67 @@
-.slider-section {
+#slider-section {
     width: 50%;
 
-    .flickity-button {
-        width: 50px;
-        height: 50px;
-        background: rgba($white, .85);
+    .carousel-inner {
 
-        .flickity-button-icon {
-            width: 33%;
-            left: 50%;
-            transform: translateX(-50%);
+        img {
+            height: 100%;
+        }
+    }
+
+    .carousel-control {
+
+        &.left,
+        &.right {
+            background-image: none;
+        }
+    }
+
+    .cursor-icons {
+        display: none;
+    }
+
+    .carousel-control {
+        width: 50%;
+    }
+
+    .carousel-indicators {
+
+        li {
+            margin: 2px;
+            width: 13px;
+            height: 13px;
+            font-weight: 800;
+            border-radius: 3px;
+            border: 2px solid $white;
+        }
+
+        &.active {
+            height: 17px;
+            width: 17px;
+        }
+    }
+
+    .carousel {
+
+        .arrow-wrapper {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba($white, .85);
+        }
+
+        .right {
+
+            &:hover {
+                cursor: url("/src/images/arrow-right.svg"), default !important;
+            }
+        }
+
+        .left {
+
+            &:hover {
+                cursor: url("/src/images/arrow-left.svg"), default !important
+            }
         }
     }
 }

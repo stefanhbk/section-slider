@@ -1,4 +1,4 @@
-.btn-primary {
+.section-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,4 +12,13 @@
     line-height: 24px;
     border-radius: 6px;
     text-decoration: none;
+    transition: all .3s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+        text-decoration: none;
+        color: $governor-bay;
+        background-color: $white;
+        border-color: $governor-bay;
+    }
 }
