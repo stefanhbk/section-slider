@@ -29,10 +29,10 @@ $(document).ready(function(){
 	});
 
 	// Add to cart
-	let $counter = $('.add-to-cart .value'),
+	let $counter = $('.add-to-cart .counter__value'),
 		$counterValue = parseInt($counter.val()),
-		$decreaseValue = $('.add-to-cart .decrease'),
-		$increaseValue = $('.add-to-cart .increase');
+		$decreaseValue = $('.add-to-cart .counter__decrease'),
+		$increaseValue = $('.add-to-cart .counter__increase');
 
 	$decreaseValue.on('click', function() {
 		if($counterValue == 0) {

@@ -13,7 +13,7 @@
         border: 1px solid $governor-bay;
         border-radius: 6px;
 
-        .value {
+        &__value {
             width: 20px;
             font-size: 14px;
             font-weight: bold;
