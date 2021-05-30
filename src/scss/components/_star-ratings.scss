@@ -1,0 +1,30 @@
+.ratings {
+    display: flex;
+    margin-bottom: 20px;
+
+    .stars {
+        margin-right: 24px;
+
+        span {
+            display: inline-block;
+            position: relative;
+            width: 12px;
+            color: $jacarta;
+    
+            &:not(:last-of-type) {
+                margin-right: 12px;
+    
+                &::before {
+                    content: "\2605";
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
