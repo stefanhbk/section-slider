@@ -27,4 +27,24 @@ $(document).ready(function(){
 			$input.val($(this).text());
 		});
 	});
+
+	// Add to cart
+	let $counter = $('.add-to-cart .value'),
+		$counterValue = parseInt($counter.val()),
+		$decreaseValue = $('.add-to-cart .decrease'),
+		$increaseValue = $('.add-to-cart .increase');
+
+	$decreaseValue.on('click', function() {
+		if($counterValue == 0) {
+			return;
+		} else {
+			$counterValue--;
+			$counter.val($counterValue);
+		}
+	});
+
+	$increaseValue.on('click', function() {
+		$counterValue++;
+		$counter.val($counterValue);
+	});
 });
