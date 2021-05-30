@@ -9,6 +9,7 @@
     input {
         width: 100%;
         font-size: 14px;
+        font-weight: 700;
         border: none;
         background-color: transparent;
         color: $governor-bay;
@@ -22,7 +23,7 @@
     &__list {
         display: none;
         position: absolute;
-        top: 42px;
+        top: 38px;
         right: 0;
         margin: 0;
         width: 140px;
