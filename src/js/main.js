@@ -14,12 +14,15 @@ $(document).ready(function(){
 	});
 
 	// Custom select dropdown
-	$('.subs-wrapper').each(function(){
+	$('.subs-wrapper').each(function() {
 
 		let $input = $(this).find('input'),
 			$dropDown = $(this).find('ul');
 	
-		$(this).on('click', function() {
+		$(this).on('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+
 			$dropDown.stop().slideToggle();
 		});
 	
@@ -27,6 +30,14 @@ $(document).ready(function(){
 			$input.val($(this).text());
 		});
 	});
+
+	$('body').on('click', function(e) {
+		e.preventDefault();
+
+		if(!$(e.target).is('.subs-wrapper') && !$('.subs-wrapper__list').is(':hidden')) {
+			$('.subs-wrapper').find('ul').slideToggle();
+		}
+	})
 
 	// Add to cart
 	let $counter = $('.add-to-cart .counter__value'),
