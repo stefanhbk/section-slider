@@ -57,12 +57,4 @@ $(document).ready(function(){
 		$counterValue++;
 		$counter.val($counterValue);
 	});
-
-	// Flickity slider config
-	$('.slider-section').flickity({
-		// options
-		cellAlign: 'left',
-		contain: true,
-		pageDots: false
-	});
 });
