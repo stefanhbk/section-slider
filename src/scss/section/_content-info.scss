@@ -1,0 +1,66 @@
+.main-container__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 72px 0 80px;
+    height: 76px;
+
+    .product,
+    .subscribe {
+        display: flex;
+        width: 100%;
+    }
+
+    .product {
+        align-items: center;
+
+        &__img {
+            margin-right: 16px;
+            width: 56px;
+            height: 56px;
+        }
+
+        &__info {
+
+            h3,
+            span {
+                color: $jacarta;
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: 28px;
+                text-transform: capitalize;
+            }
+
+            span {
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: bold;
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+    .subscribe {
+        justify-content: flex-end;
+
+        &__info {
+            margin-right: 25px;
+            text-align: right;
+
+            span {
+                display: block;
+                padding-right: 5px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+
+                &:last-of-type {
+                    padding-right: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
