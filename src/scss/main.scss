@@ -3,7 +3,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
@@ -11,3 +10,8 @@
 @import "components/button";
 @import "components/form-radio";
 @import "components/select";
+@import "components/star-ratings";
+@import "components/add-to-cart";
+
+@import "section/slider";
+@import "section/content";
