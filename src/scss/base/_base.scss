@@ -10,6 +10,7 @@ body {
     padding: 50px 20px;
     font-family: $primary;
     box-sizing: border-box;
+    background-color: $mercury;
 }
 
 .main-container {
@@ -19,7 +20,6 @@ body {
     max-height: 764px;
     
     &__content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
     }
 }
