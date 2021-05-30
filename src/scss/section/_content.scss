@@ -1,0 +1,30 @@
+.main-container__right {
+    padding: 70px 122px 98px 82px;
+
+    .breadcrumbs {
+        margin-bottom: 3px;
+
+        span {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+    }
+
+    .heading {
+        font-size: 62px;
+        line-height: 64px;
+        font-weight: 700;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 368px;
+
+        .paragraph {
+            margin-bottom: 32px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
