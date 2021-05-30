@@ -1,0 +1,25 @@
+.add-to-cart {
+    display: flex;
+
+    .counter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        margin-right: 16px;
+        width: 100%;
+        max-width: 177px;
+        height: 45px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+        color: $governor-bay;
+        border: 1px solid $governor-bay;
+        border-radius: 6px;
+
+        span {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
