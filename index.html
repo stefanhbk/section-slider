@@ -8,58 +8,73 @@
     </head>
     <body>  
         <section class="main-container">
-            <div class="main-container__left slider">
-
-            </div>
-            <div class="main-container__right">
-                <div class="breadcrumbs">
-                    <span>LOREM + LOREM IPSUM</span>
+            <div class="main-container__content">
+                <div class="main-container__content__left slider">
+    
                 </div>
-                <h2 class="heading">Lorem ipsum dolor</h2>
-                <div class="ratings">
-                    <div class="stars">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                <div class="main-container__content__right">
+                    <div class="breadcrumbs">
+                        <span>LOREM + LOREM IPSUM</span>
                     </div>
-                    <span class="reviews">1234 reviews</span>
-                </div>
-
-                <div class="content">
-                    <p class="paragraph">An lorem of super-nutrients to promote regular digestion and healthy skin. This nutritious and tasty blend is high in vitamins, 
-                    minerals, enzymes and antioxidants that can ensure optimal cell function and effective protein and nutrient absorption. </p>
-                </div>
-                <form>
-                    <div class="form">
-                        <div class="form__radio-group active subscribe">
-                            <input type="radio" name="size" id="subscribe" class="form__radio-input" checked>
-                            <label class="form__label-radio" for="subscribe">
-                                <span class="form__radio-button"></span> $44.95 - Subscribe & Save 10% every
-                            </label>
-                            <div class="subs-wrapper">
-                                <input type="text" disabled placeholder="1 month">
-                                <ul class="subs-wrapper__list">
-                                    <li>1 month</li>
-                                    <li>2 months</li>
-                                    <li>3 months</li>
-                                </ul>
+                    <h2 class="heading">Lorem ipsum dolor</h2>
+                    <div class="ratings">
+                        <div class="stars">
+                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                        </div>
+                        <span class="reviews">1234 reviews</span>
+                    </div>
+    
+                    <div class="content">
+                        <p class="paragraph">An lorem of super-nutrients to promote regular digestion and healthy skin. This nutritious and tasty blend is high in vitamins, 
+                        minerals, enzymes and antioxidants that can ensure optimal cell function and effective protein and nutrient absorption. </p>
+                    </div>
+                    <form>
+                        <div class="form">
+                            <div class="form__radio-group active subscribe">
+                                <input type="radio" name="size" id="subscribe" class="form__radio-input" checked>
+                                <label class="form__label-radio" for="subscribe">
+                                    <span class="form__radio-button"></span> $44.95 - Subscribe & Save 10% every
+                                </label>
+                                <div class="subs-wrapper">
+                                    <input type="text" disabled placeholder="1 month">
+                                    <ul class="subs-wrapper__list">
+                                        <li>1 month</li>
+                                        <li>2 months</li>
+                                        <li>3 months</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form__radio-group">
+                                <input type="radio" name="size" id="one-time" class="form__radio-input">
+                                <label class="form__label-radio" for="one-time">
+                                    <span class="form__radio-button"></span> $49.95 - One-time Purchase
+                                </label>
                             </div>
                         </div>
-                        <div class="form__radio-group">
-                            <input type="radio" name="size" id="one-time" class="form__radio-input">
-                            <label class="form__label-radio" for="one-time">
-                                <span class="form__radio-button"></span> $49.95 - One-time Purchase
-                            </label>
+                    </form>
+                    <div class="add-to-cart">
+                        <div class="counter">
+                            <span class="counter__decrease">-</span><input class="counter__value" type="text" value="0"><span class="counter__increase">+</span>
                         </div>
+                        <a class="btn-primary" href="#">Add to cart</a>
                     </div>
-                </form>
-                <div class="add-to-cart">
-                    <div class="counter">
-                        <span class="counter__decrease">-</span><input class="counter__value" type="text" value="0"><span class="counter__increase">+</span>
-                    </div>
-                    <a class="btn-primary" href="#">Add to cart</a>
                 </div>
             </div>
             <div class="main-container__info">
-                
+                <div class="product">
+                    <img class="product__img" src="/src/images/product-img.png" alt="product-img">
+                    <div class="product__info">
+                        <h3>Superfood Greens</h3>
+                        <span>1234 Reviews</span>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <div class="subscribe__info">
+                        <span>$49.95</span>
+                        <span>Subscribe & Save 10%</span>
+                    </div>
+                    <a class="btn-primary" href="#">Add to cart</a>
+                </div>
             </div>
         </section>
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
