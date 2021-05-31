@@ -3,6 +3,9 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "vendors/bootstrap";
+@import "vendors/splitting";
+
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
@@ -12,9 +15,8 @@
 @import "components/select";
 @import "components/star-ratings";
 @import "components/add-to-cart";
+@import "components/circle-text";
 
 @import "section/slider-section";
 @import "section/content";
 @import "section/content-info";
-
-@import "vendors/bootstrap";

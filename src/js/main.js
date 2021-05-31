@@ -57,4 +57,7 @@ $(document).ready(function(){
 		$counterValue++;
 		$counter.val($counterValue);
 	});
+
+	// Circle text config
+	let results = Splitting({ by: 'chars', whitespace: true });
 });
