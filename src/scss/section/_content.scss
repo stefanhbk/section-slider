@@ -2,6 +2,7 @@
 
 .main-container__content__right {
     padding: 70px 122px 98px 82px;
+    position: relative;
     width: 50%;
     background: linear-gradient(45deg, $wheat, $citrine-white, $white);
 	background-size: 300% 100%;
@@ -18,6 +19,8 @@
     }
 
     .heading {
+        width: 100%;
+        max-width: 390px;
         font-size: 62px;
         line-height: 64px;
         font-weight: 700;
