@@ -11,6 +11,10 @@ body {
     font-family: $primary;
     box-sizing: border-box;
     background-color: $mercury !important;
+
+    @include respond(micro-bear) {
+        padding: 20px 10px;
+    }
 }
 
 .main-container {
@@ -21,5 +25,14 @@ body {
     
     &__content {
         display: flex;
+
+        @include respond(medium-bear) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    @include respond(medium-bear) {
+        max-width: 850px;
+        max-height: 100%;
     }
 }
