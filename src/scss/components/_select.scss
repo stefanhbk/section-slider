@@ -1,23 +1,35 @@
 .subs-wrapper {
     display: inline-block;
     margin-left: 30px;
-    width: 74px;
+    max-width: 78px;
+    width: 100%;
     border: none;
     border-bottom: 1px solid $governor-bay;
     background-color: transparent;
+
+    input[disabled] {
+        cursor: pointer;
+    }
     
-    input {
+    &__option {
         width: 100%;
         font-size: 14px;
         font-weight: 700;
         border: none;
         background-color: transparent;
         color: $governor-bay;
-        cursor: pointer;
         
         &::placeholder {
             color: $governor-bay;
         }
+
+        @include respond(medium-bear) {
+            font-size: 12px;
+        }
+
+        @include respond(mini-bear) {
+			font-size: 11px;
+		}
     }
 
     &__list {
@@ -43,13 +55,17 @@
             &:hover {
                 opacity: .8;
             }
+
+            @include respond(medium-bear) {
+                font-size: 14px;
+            }
         }
     }
 
     &::after {
         content: "";
         position: absolute;
-        right: 34px;
+        right: 30px;
         top: 16px;
         pointer-events: none;
         border: solid $governor-bay;
@@ -57,5 +73,21 @@
         display: inline-block;
         padding: 3px;
         transform: rotate(45deg);
+
+        @include respond(medium-bear) {
+            right: 70px;
+        }
+
+        @include respond(mini-bear) {
+            right: 8px
+        }
+    }
+
+    @include respond(mini-bear) {
+        margin-left: 60px;
+    }
+
+    @include respond(micro-bear) {
+        margin-left: 12px;
     }
 }
