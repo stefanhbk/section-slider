@@ -5,6 +5,11 @@
 
         img {
             height: 100%;
+            object-fit: cover;
+
+            @include respond(medium-bear) {
+                width: 100%;
+            }
         }
     }
 
@@ -63,5 +68,9 @@
                 cursor: url("/src/images/arrow-left.svg"), default !important
             }
         }
+    }
+
+    @include respond(medium-bear) {
+        width: 100%;
     }
 }
