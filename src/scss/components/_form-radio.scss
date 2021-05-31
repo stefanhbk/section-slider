@@ -13,11 +13,22 @@
 
 		&.subscribe {
 			margin-bottom: 2px;
+
+			@include respond(mini-bear) {
+				display: flex;
+				justify-content: space-between;
+				padding-right: 8px;
+			}
 		}
 
 		&.active,
 		&:hover {
 			background-color: $selago;
+		}
+
+		@include respond(mini-bear) {
+			padding-left: 8px;
+			max-width: 100%;
 		}
 	}
 
@@ -46,6 +57,20 @@
 		line-height: 24px;
 		color: $governor-bay;
 		cursor: pointer;
+
+		@include respond(medium-bear) {
+			font-size: 12px;
+		}
+
+		@include respond(mini-bear) {
+			font-size: 11px;
+		}
+
+		@include respond(micro-bear) {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
 	}
 
 	&__radio-button {
