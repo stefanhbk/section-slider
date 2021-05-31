@@ -55,4 +55,16 @@
             display: none;
         }
     }
+
+    @include respond(papa-bear) {
+        top: 75px;
+        right: 50px;
+    }
+
+    @include respond(medium-bear) {
+        top: 10px;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
